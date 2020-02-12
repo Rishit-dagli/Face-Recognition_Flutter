@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "125204702770",
+    "firebase_url": "https://ai-with-flutter.firebaseio.com",
+    "project_id": "ai-with-flutter",
+    "storage_bucket": "ai-with-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125204702770:android:967e8c2f0e3eadc621fe2b",
+        "android_client_info": {
+          "package_name": "ml.rishitdagli.ai_with_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125204702770-nml93ed7hn1634hu2s6itrjpok6p23ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrO__h6cyDPuj-CdasCY19pNm7R0IlFJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125204702770-nml93ed7hn1634hu2s6itrjpok6p23ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125204702770:android:c161e7c9fc6957f821fe2b",
+        "android_client_info": {
+          "package_name": "ml.rishitdagli.face_recog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125204702770-nml93ed7hn1634hu2s6itrjpok6p23ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrO__h6cyDPuj-CdasCY19pNm7R0IlFJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125204702770-nml93ed7hn1634hu2s6itrjpok6p23ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
