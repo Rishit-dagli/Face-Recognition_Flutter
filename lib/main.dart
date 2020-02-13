@@ -34,7 +34,12 @@ class _FacePageState extends State<FacePage> {
       isLoading = true;
     });
     final image = FirebaseVisionImage.fromFile(imageFile);
-    final faceDetector = FirebaseVision.instance.faceDetector();
+    final faceDetector = FirebaseVision.instance.faceDetector(
+      FaceDetectorOptions(
+        mode: FaceDetectorMode.fast,
+        enableLandmarks: true
+      )
+    );
     List<Face> faces = await faceDetector.processImage(image);
     if (mounted) {
       setState(() {
