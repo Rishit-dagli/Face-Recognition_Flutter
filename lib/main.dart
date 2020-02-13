@@ -27,7 +27,9 @@ class _FacePageState extends State<FacePage> {
   ui.Image _image;
 
   _getImageAndDetectFaces() async {
-    final imageFile = await ImagePicker.pickImage(source: ImageSource.gallery);
+    final imageFile = await ImagePicker.pickImage(
+        source: ImageSource.gallery
+    );
     setState(() {
       isLoading = true;
     });
