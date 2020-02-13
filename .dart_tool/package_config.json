@@ -68,6 +68,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///C:/Users/rishit_dagli/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.7.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "flutter_plugin_android_lifecycle",
       "rootUri": "file:///C:/Users/rishit_dagli/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.5",
       "packageUri": "lib/",
@@ -188,13 +194,19 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///C:/Users/rishit_dagli/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "face_recog",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-02-12T07:52:46.766558Z",
+  "generated": "2020-02-13T13:14:14.746365Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
