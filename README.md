@@ -506,6 +506,16 @@ FittedBox(
 
 ```
 
+## Examples
+
+![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example1.png)
+
+![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example2.jpeg)
+
+![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example_startup.png)
+
+
+
 ## What next!
 
 You can contribute to this project, all you need to do is submit a pull request. Be sure to first read [CONTRIBUTING.md](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/CONTRIBUTING.md).
