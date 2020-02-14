@@ -1,0 +1,9 @@
+- name: Flutter action
+  uses: subosito/flutter-action@v1.1.1
+  with:
+    # The Flutter version to make available on the path
+    flutter-version: # optional
+    # The Flutter build release channel
+    channel: # optional, default is stable
+    # Deprecated. Use flutter-version instead. Will not be supported after October 1, 2019
+    version: # optional
