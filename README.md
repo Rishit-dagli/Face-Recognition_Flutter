@@ -13,10 +13,28 @@
    
 3. [Example (Face detection)](#Example-(Face-detection))<br>
    3.1 [Adding Firebase to Flutter project](#Adding-Firebase-to-Flutter-project)<br>
+       2.11 [Prerequisites](https://github.com/Rishit-dagli/Face-Recognition_Flutter#prerequisites)<br>
+       2.21 [Create a Firebase Project](https://github.com/Rishit-dagli/Face-Recognition_Flutter#create-a-firebase-project)<br>
+       2.22 [Register your app with Firebase](https://github.com/Rishit-dagli/Face-Recognition_Flutter#register-your-app-with-firebase)<br>
+       2.23 [Add a Firebase configuration file](https://github.com/Rishit-dagli/Face-Recognition_Flutter#add-a-firebase-configuration-file)<br>
+       2.24 [Add FlutterFire plugins](https://github.com/Rishit-dagli/Face-Recognition_Flutter#add-flutterfire-plugins)<br>
    3.2 [Some Dependencies](#Some-Dependencies)<br>
    3.3 [A simple Home Page UI](#A-simple-Home-Page-UI)
-   
-        
+       3.31 [Startup UI](https://github.com/Rishit-dagli/Face-Recognition_Flutter#startup-ui)<br>
+       3.32 [Adding a FAB](https://github.com/Rishit-dagli/Face-Recognition_Flutter#adding-a-fab)<br>
+   3.4 [Work Flow](https://github.com/Rishit-dagli/Face-Recognition_Flutter#work-flow)<br>
+   3.5 [Select an image](https://github.com/Rishit-dagli/Face-Recognition_Flutter#select-an-image)<br>
+   3.5 [Load image for processing](https://github.com/Rishit-dagli/Face-Recognition_Flutter#load-image-for-processing)<br>
+   3.6 [Perform face detection](https://github.com/Rishit-dagli/Face-Recognition_Flutter#perform-face-detection)<br>
+       3.61 [Customising faceDetector](https://github.com/Rishit-dagli/Face-Recognition_Flutter#customising-facedetector)<br>
+       3.62 [Get the bounding Box](https://github.com/Rishit-dagli/Face-Recognition_Flutter#get-the-bounding-box)<br>
+       3.63 [Fixing a minor problem](https://github.com/Rishit-dagli/Face-Recognition_Flutter#fixing-a-minor-problem)<br>
+   3.7 [Drawing over the image](https://github.com/Rishit-dagli/Face-Recognition_Flutter#drawing-over-the-image)<br>
+       3.71 [Load images in canvas](https://github.com/Rishit-dagli/Face-Recognition_Flutter#load-images-in-canvas)<br>
+       3.72 [Paint the faces](https://github.com/Rishit-dagli/Face-Recognition_Flutter#paint-the-faces)<br>
+       3.73 [Another minor problem](https://github.com/Rishit-dagli/Face-Recognition_Flutter#another-minor-problem)<br>
+       
+       
 4. [Examples](#Examples)
 
 
@@ -507,13 +525,13 @@ FittedBox(
 ```
 
 ## Examples
-
+<br>
+<br>
 ![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example1.png)
 
 ![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example2.jpeg)
 
 ![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example_startup.png)
-
 
 
 ## What next!
