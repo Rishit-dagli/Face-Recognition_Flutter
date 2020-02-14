@@ -12,8 +12,8 @@
    
    
 3. [Example (Face detection)](#Example-(Face-detection))<br>
-   3.1 [Adding Firebase to Flutter project](#Adding-Firebase-to-Flutter-project)
-   3.2 [Some Dependencies](#Some Dependencies)
+   3.1 [Adding Firebase to Flutter project](#Adding-Firebase-to-Flutter-project)<br>
+   3.2 [Some Dependencies](#Some-Dependencies)<br>
    3.3 [A simple Home Page UI](#A-simple-Home-Page-UI)
    
         
