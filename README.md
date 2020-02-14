@@ -13,6 +13,8 @@
    
 3. [Example (Face detection)](#Example-(Face-detection))<br>
    3.1 [Adding Firebase to Flutter project](#Adding-Firebase-to-Flutter-project)
+   3.2 [Some Dependencies](#Some Dependencies)
+   3.3 [A simple Home Page UI](#A-simple-Home-Page-UI)
    
         
 4. [Examples](#Examples)
@@ -239,3 +241,271 @@ dependencies:
 *    If you added Analytics, run your app to send verification to Firebase that you've successfully integrated Firebase. Otherwise, you can skip the verification step.
 
 You’re all set! Your Flutter app is registered and configured to use Firebase
+
+### Some Dependencies
+
+We need the-
+* [image_picker](https://pub.dev/packages/image_picker) - So we can easily upload images or  click photos
+* [firebase_ml_vision](https://pub.dev/packages/firebase_ml_vision) - To provide us the core Firebase capabilities
+
+So, now my `pubsec.yaml` looks like this-
+
+```
+...
+...
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.6.1+4
+  firebase_ml_vision: ^0.9.2+1
+  
+...
+....
+```
+
+### A simple Home Page UI
+
+#### Startup UI
+```
+class FacePage extends StatefulWidget {
+  @override
+  _FacePageState createState() => _FacePageState();
+}
+
+class _FacePageState extends State<FacePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Face Detector')
+      ),
+      body: Container(),
+    );
+}
+```
+
+Here, we are making a `FacePage` class as a `StatefulWidget`
+
+#### Adding a FAB
+
+Now, you need to add a FLoating Action Button to allow the user to pick an image
+
+```
+floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        tooltip: 'Pick Image',
+        child: Icon(Icons.add_a_photo)
+```
+
+We will fill the `onPressed` part later
+
+### Work Flow
+
+1. Select an image
+2. Load image for processing
+3. Perform face detection
+
+### Select an image
+
+Selecting aan image is very easy in Flutter
+
+```
+final imageFile = await ImagePicker.pickImage(
+  source: ImageSource.gallery,
+);
+```
+
+You can change it to
+
+```
+source: ImageSource.camera
+```
+
+To allow the user to use a camera to upload the image
+
+### Load image for processing
+
+```
+final image = FirebaseVisionImage.fromFile(imageFile);
+```
+
+This code will load my image file in a format suitable for us to work on it
+
+### Perform face detection
+
+```
+final faceDetector = FirebaseVision.instance.faceDetector();
+```
+
+Here we are simply initializing an instancce of `FirebaseVision` class with `faceDetector`
+
+You can also try these other models-
+
+```
+FirebaseVision.instance.faceDetector();
+FirebaseVision.instance.barcodeDetector();
+FirebaseVision.instance.labelDetector();
+FirebaseVision.instance.textDetector();
+FirebaseVision.instance.cloudLabelDetector();
+```
+
+#### Customising faceDetector
+
+```
+final faceDetector = FirebaseVision.instance.faceDetector(
+      FaceDetectorOptions(
+        mode: FaceDetectorMode.fast,
+        enableLandmarks: true,
+)
+```
+
+You can make these changes to code to customise the `faceDetector`, you can also experiment with different modes like `fast` and 
+`accurate`. The `enableLandmarks` also allows you to detect eyes, ears and nose in a face.
+
+#### Get the bounding Box
+
+This is the `Face` class-
+
+```
+class Face{
+  final Rectangle<int> boundingBox;
+  final double headEulerAngleY;
+  final double headEulerAngleZ;
+  final double leftEyeOpenProbability;
+  final double rightEyeOpenProbability;
+  final double smilingProbability;
+  final int trackingId;
+  FaceLadmark getLandmark(
+    FaceLandmarkType landmark,
+ ) => _landmarks[landmark]
+}
+```
+
+We are most interested in the `Rectangle<int> boundingBox` variable and we can easily get its value.
+
+#### Fixing a minor problem
+
+Note: We have 2 `await` while getting image from user and getting faces list. The face page  widget might not be mounted, the 
+user could have closed the app too and we could be wasting compute power
+
+So, we will first check if the widget is `mounted` and thenn call `setState()`
+
+```
+if (mounted) {
+      setState(() {
+        _imageFile = imageFile;
+        _faces = faces;
+     });
+
+```
+
+### Drawing over the image
+
+We will use the `customPaint` widget to do this
+
+A sample `customPaint` widget-
+
+```
+final customPaint = CustomPaint(
+  painter: myPainter(),
+  child: AnyWidget(),
+)
+
+class MyPainter extends CustomPainter{
+  @override
+  void paint(ui.Canvas canvas, ui.Size size){
+    // implement paint
+  }
+  @override
+  void shouldRepaint(CustomPainter oldDelegate){
+    // implement shoudRepaint
+  }
+}
+
+```
+
+#### Load images in canvas
+
+We first need to load the images in the `customPainter` canvas before we can draw over them.
+
+```
+Future<ui.Image> _loadImage(File file) async {
+  final data = await file.readAsBytes();
+  return await decodeImageFromList(data);
+}
+
+```
+
+So, now my code looks like this
+
+```
+class FacePainter extends CustomPainter{
+  FacePainter(this.image, this.faces);
+  final ui.Image image;
+  final List<Rect> faces;
+
+  @override
+  void paint(ui.Canvas canvas, ui.Size size){}
+  @override
+  void shouldRepaint(CustomPainter oldDelegate){
+    return null;
+ }
+
+```
+
+#### Paint the faces
+
+This is a very simple self explanatory code-
+
+```
+@override
+  void paint(ui.Canvas canvas, ui.Size size) {
+  canvas.drawImage(image, Offset.zero, Paint());
+    for (var i = 0; i < faces.length; i++) {
+      canvas.drawRect(rects[i], paint);
+    }
+  }
+
+```
+
+We will now implement `shouldRepaint` 
+
+```
+@override
+  bool shouldRepaint(FacePainter oldDelegate) {
+    return image != oldDelegate.image || faces != oldDelegate.faces;
+  }
+
+```
+
+#### Another minor problem
+
+Flutter is not good when you try to draw something out of canvas and your image can go outside of your canvas
+
+```
+SizedBox(
+            width: _image.width.toDouble(),
+            height: _image.height.toDouble(),
+            child: CustomPaint(
+              painter: FacePainter(_image, _faces),
+            ),
+
+```
+
+Placing custom paint in a container and trying to size it is a bad idea!!! So we will use another widget.
+
+```
+FittedBox(
+          child: SizedBox(
+            width: _image.width.toDouble(),
+            height: _image.height.toDouble(),
+            child: CustomPaint(
+              painter: FacePainter(_image, _faces),
+            ),
+
+```
+
+## What next!
+
+You can contribute to this project, all you need to do is submit a pull request. Be sure to first read [CONTRIBUTING.md](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/CONTRIBUTING.md).
