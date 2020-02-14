@@ -19,7 +19,7 @@
        &nbsp;&nbsp;&nbsp;&nbsp; 3.23 [Add a Firebase configuration file](https://github.com/Rishit-dagli/Face-Recognition_Flutter#add-a-firebase-configuration-file)<br>
        &nbsp;&nbsp;&nbsp;&nbsp; 3.24 [Add FlutterFire plugins](https://github.com/Rishit-dagli/Face-Recognition_Flutter#add-flutterfire-plugins)<br>
    3.2 [Some Dependencies](#Some-Dependencies)<br>
-   3.3 [A simple Home Page UI](#A-simple-Home-Page-UI)
+   3.3 [A simple Home Page UI](#A-simple-Home-Page-UI)<br>
        &nbsp;&nbsp;&nbsp;&nbsp; 3.31 [Startup UI](https://github.com/Rishit-dagli/Face-Recognition_Flutter#startup-ui)<br>
        &nbsp;&nbsp;&nbsp;&nbsp; 3.32 [Adding a FAB](https://github.com/Rishit-dagli/Face-Recognition_Flutter#adding-a-fab)<br>
    3.4 [Work Flow](https://github.com/Rishit-dagli/Face-Recognition_Flutter#work-flow)<br>
