@@ -6,4 +6,4 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FFace-Recognition_Flutter)
 
-I also gave a talk about this at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/)
+My session at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/) about **AI with Flutter**, 15 Feb 2020.
