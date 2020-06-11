@@ -11,3 +11,5 @@ My session at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/)
 ### [Event Announcement](https://www.meetup.com/Mumbai-Flutter/events/268650815/)
 
 ### [Slides](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/talk/AI%20with%20Flutter.pdf)
+
+### [Recording](https://www.youtube.com/watch?v=xuiqxdtjp3Y)
