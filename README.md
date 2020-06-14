@@ -1,5 +1,10 @@
 # Face Recognition_Flutter
 
+A project which shows you how you code use AI algorithms with Flutter, here I show the example of a Face recognition application with 
+Flutter and FireBase. I also gave a taalk about this at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/). I strongly 
+advise you to check out the [talk](https://github.com/Rishit-dagli/Face-Recognition_Flutter/tree/master/talk) folder which has details
+regarding the talk.
+
 ## Table of contents
 
 1. [Introduction](#Introduction)
