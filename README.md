@@ -15,7 +15,6 @@ regarding the talk.
     2.2 [On-device or in the cloud](#On-device-or-in-the-cloud )<br>
     2.3 [Deploy custom models](#Deploy-custom-models)<br>
    
-   
 3. [Example (Face detection)](#Example-(Face-detection))<br>
    3.1 [Adding Firebase to Flutter project](#Adding-Firebase-to-Flutter-project)<br>
        &nbsp;&nbsp;&nbsp;&nbsp; 3.11 [Prerequisites](https://github.com/Rishit-dagli/Face-Recognition_Flutter#prerequisites)<br>
@@ -38,18 +37,17 @@ regarding the talk.
        &nbsp;&nbsp;&nbsp;&nbsp; 3.71 [Load images in canvas](https://github.com/Rishit-dagli/Face-Recognition_Flutter#load-images-in-canvas)<br>
        &nbsp;&nbsp;&nbsp;&nbsp; 3.72 [Paint the faces](https://github.com/Rishit-dagli/Face-Recognition_Flutter#paint-the-faces)<br>
        &nbsp;&nbsp;&nbsp;&nbsp; 3.73 [Another minor problem](https://github.com/Rishit-dagli/Face-Recognition_Flutter#another-minor-problem)<br>
-       
-       
+              
 4. [Examples](#Examples)
 
-
 5. [What next!](#What-next!)
-
 
 ## Introduction
 A face recognition app using FLutter to demonstrate the use of Firebase SDKs and edge AI with Flutter
 
-ML Kit is a mobile SDK that brings Google's machine learning expertise to Android and iOS apps in a powerful yet easy-to-use package. Whether you're new or experienced in machine learning, you can implement the functionality you need in just a few lines of code. There's no need to have deep knowledge of neural networks or model optimization to get started. On the other hand, if you are an experienced ML developer, ML Kit provides convenient APIs that help you use your custom TensorFlow Lite models in your mobile apps.
+ML Kit is a mobile SDK that brings Google's machine learning expertise to Android and iOS apps in a powerful yet easy-to-use package. Whether you're new or experienced in
+machine learning, you can implement the functionality you need in just a few lines of code. There's no need to have deep knowledge of neural networks or model optimization to 
+get started. On the other hand, if you are an experienced ML developer, ML Kit provides convenient APIs that help you use your custom TensorFlow Lite models in your mobile apps.
 
 Watch this video for a better understanding-
 
@@ -165,32 +163,32 @@ Important: If you're releasing your Flutter app on both iOS and Android, registe
       - In your root-level (project-level) Gradle file (android/build.gradle), add rules to include the Google Services Gradle plugin. Check that you have Google’s Maven repository, as well.<br>
 
 ```
-        buildscript {
+buildscript {
 
-            repositories {
-              // Check that you have the following line (if not, add it):
-              google()  // Google's Maven repository
-            }
+	repositories {
+	  // Check that you have the following line (if not, add it):
+	  google()  // Google's Maven repository
+	}
 
-            // ...
+	// ...
 
-            dependencies {
-              // ...
+	dependencies {
+	  // ...
 
-              // Add the following line:
-              classpath 'com.google.gms:google-services:4.3.3'  // Google Services plugin
-            }
-        }
+	  // Add the following line:
+	  classpath 'com.google.gms:google-services:4.3.3'  // Google Services plugin
+	}
+}
 
-        allprojects {
-            // ...
+allprojects {
+	// ...
 
-            repositories {
-              // Check that you have following line (if not, add it):
-              google()  // Google's Maven repository
-              // ...
-            }
-        }
+	repositories {
+	  // Check that you have following line (if not, add it):
+	  google()  // Google's Maven repository
+	  // ...
+	}
+}
 ```
 
 In your module (app-level) Gradle file (usually `android/app/build.gradle`), apply the Google Services Gradle plugin.
@@ -232,7 +230,7 @@ Note: The steps in this section are an example of how to add Flutter-supported F
 
     Note: All Flutter-Firebase apps, both iOS and Android versions, require the `firebase_core plugin` for Flutter.
 
-```
+```yaml
     dependencies:
       flutter:
         sdk: flutter
@@ -243,7 +241,7 @@ Note: The steps in this section are an example of how to add Flutter-supported F
 *   Add the FlutterFire plugins for the Firebase products that you want to use in your app.<br>
 (Analytics enabled)
 
-```
+```yaml
 dependencies:
   flutter:
     sdk: flutter
@@ -273,7 +271,7 @@ We need the-
 
 So, now my `pubsec.yaml` looks like this-
 
-```
+```yaml
 ...
 ...
 
@@ -290,6 +288,7 @@ dependencies:
 ### A simple Home Page UI
 
 #### Startup UI
+
 ```
 class FacePage extends StatefulWidget {
   @override
