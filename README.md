@@ -7,40 +7,32 @@ regarding the talk.
 
 ## Table of contents
 
-1. [Introduction](#Introduction)
-
-
-2. [Key capabilities](#Key-capabilities)<br>
-    2.1 [Production-ready for common use cases](#Production-ready-for-common-use-cases)<br>
-    2.2 [On-device or in the cloud](#On-device-or-in-the-cloud )<br>
-    2.3 [Deploy custom models](#Deploy-custom-models)<br>
-   
-3. [Example (Face detection)](#Example-(Face-detection))<br>
-   3.1 [Adding Firebase to Flutter project](#Adding-Firebase-to-Flutter-project)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.11 [Prerequisites](https://github.com/Rishit-dagli/Face-Recognition_Flutter#prerequisites)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.21 [Create a Firebase Project](https://github.com/Rishit-dagli/Face-Recognition_Flutter#create-a-firebase-project)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.22 [Register your app with Firebase](https://github.com/Rishit-dagli/Face-Recognition_Flutter#register-your-app-with-firebase)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.23 [Add a Firebase configuration file](https://github.com/Rishit-dagli/Face-Recognition_Flutter#add-a-firebase-configuration-file)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.24 [Add FlutterFire plugins](https://github.com/Rishit-dagli/Face-Recognition_Flutter#add-flutterfire-plugins)<br>
-   3.2 [Some Dependencies](#Some-Dependencies)<br>
-   3.3 [A simple Home Page UI](#A-simple-Home-Page-UI)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.31 [Startup UI](https://github.com/Rishit-dagli/Face-Recognition_Flutter#startup-ui)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.32 [Adding a FAB](https://github.com/Rishit-dagli/Face-Recognition_Flutter#adding-a-fab)<br>
-   3.4 [Work Flow](https://github.com/Rishit-dagli/Face-Recognition_Flutter#work-flow)<br>
-   3.5 [Select an image](https://github.com/Rishit-dagli/Face-Recognition_Flutter#select-an-image)<br>
-   3.5 [Load image for processing](https://github.com/Rishit-dagli/Face-Recognition_Flutter#load-image-for-processing)<br>
-   3.6 [Perform face detection](https://github.com/Rishit-dagli/Face-Recognition_Flutter#perform-face-detection)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.61 [Customising faceDetector](https://github.com/Rishit-dagli/Face-Recognition_Flutter#customising-facedetector)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.62 [Get the bounding Box](https://github.com/Rishit-dagli/Face-Recognition_Flutter#get-the-bounding-box)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.63 [Fixing a minor problem](https://github.com/Rishit-dagli/Face-Recognition_Flutter#fixing-a-minor-problem)<br>
-   3.7 [Drawing over the image](https://github.com/Rishit-dagli/Face-Recognition_Flutter#drawing-over-the-image)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.71 [Load images in canvas](https://github.com/Rishit-dagli/Face-Recognition_Flutter#load-images-in-canvas)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.72 [Paint the faces](https://github.com/Rishit-dagli/Face-Recognition_Flutter#paint-the-faces)<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; 3.73 [Another minor problem](https://github.com/Rishit-dagli/Face-Recognition_Flutter#another-minor-problem)<br>
-              
-4. [Examples](#Examples)
-
-5. [What next!](#What-next!)
+- [Introduction](#introduction)
+- [Key capabilities](#key-capabilities)
+- [Example (Face detection)](#example--face-detection-)
+  * [Adding Firebase to Flutter project](#adding-firebase-to-flutter-project)
+    + [Prerequisites](#prerequisites)
+    + [Create a Firebase project](#create-a-firebase-project)
+    + [Register your app with Firebase](#register-your-app-with-firebase)
+    + [Add a Firebase configuration file](#add-a-firebase-configuration-file)
+    + [Add FlutterFire plugins](#add-flutterfire-plugins)
+  * [Some Dependencies](#some-dependencies)
+  * [A simple Home Page UI](#a-simple-home-page-ui)
+    + [Startup UI](#startup-ui)
+    + [Adding a FAB](#adding-a-fab)
+  * [Work Flow](#work-flow)
+  * [Select an image](#select-an-image)
+  * [Load image for processing](#load-image-for-processing)
+  * [Perform face detection](#perform-face-detection)
+    + [Customising faceDetector](#customising-facedetector)
+    + [Get the bounding Box](#get-the-bounding-box)
+    + [Fixing a minor problem](#fixing-a-minor-problem)
+  * [Drawing over the image](#drawing-over-the-image)
+    + [Load images in canvas](#load-images-in-canvas)
+    + [Paint the faces](#paint-the-faces)
+    + [Another minor problem](#another-minor-problem)
+- [Examples](#examples)
+- [What next!](#what-next-)
 
 ## Introduction
 A face recognition app using FLutter to demonstrate the use of Firebase SDKs and edge AI with Flutter
