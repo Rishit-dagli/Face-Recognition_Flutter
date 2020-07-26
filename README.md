@@ -212,7 +212,7 @@ Since Flutter is a multi-platform SDK, each FlutterFire plugin is applicable for
 
 Be sure to check the FlutterFire docs for the most up-to-date list of FlutterFire plugins.
 
-Note: The steps in this section are an example of how to add Flutter-supported Firebase products) to your Flutter-Firebase app (both the iOS and Android versions).
+> Note: The steps in this section are an example of how to add Flutter-supported Firebase products) to your Flutter-Firebase app (both the iOS and Android versions).
 
 *    Ensure that your app is not currently running in your emulator or on your device.
 
@@ -220,14 +220,14 @@ Note: The steps in this section are an example of how to add Flutter-supported F
 
 *    Add the FlutterFire plugin for the Firebase Core Flutter SDK.
 
-    Note: All Flutter-Firebase apps, both iOS and Android versions, require the `firebase_core plugin` for Flutter.
+>Note: All Flutter-Firebase apps, both iOS and Android versions, require the `firebase_core plugin` for Flutter.
 
 ```yaml
-    dependencies:
-      flutter:
-        sdk: flutter
-      # Add the dependency for the Firebase Core Flutter SDK
-      firebase_core: ^0.4.0+9
+dependencies:
+  flutter:
+    sdk: flutter
+  # Add the dependency for the Firebase Core Flutter SDK
+  firebase_core: ^0.4.0+9
 ```
 
 *   Add the FlutterFire plugins for the Firebase products that you want to use in your app.<br>
