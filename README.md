@@ -523,12 +523,9 @@ FittedBox(
 ## Examples
 <br>
 <br>
-![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example1.png)
 
-![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example2.jpeg)
-
-![](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example_startup.png)
-
+<img src="https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example1.png" height = 400>
+<img src="https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/Screenshots/example2.jpeg" height = 400>
 
 ## What next!
 
