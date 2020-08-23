@@ -14,6 +14,8 @@ My session at [Flutter Bangalore Community](https://www.meetup.com/flutter-banga
 
 ### [Tweet](https://twitter.com/FlutterBLR/status/1290205810073595904?s=20)
 
+![](poster/flutter-banglore.jpg)
+
 ## Flutter-Mumbai-2020
 
 My session at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/) about **AI with Flutter**, 15 Feb 2020.
