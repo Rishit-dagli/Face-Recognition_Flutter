@@ -8,6 +8,8 @@
 
 My session at [Flutter Bangalore Community](https://www.meetup.com/flutter-bangalore-group/) about **AI with Flutter**, 08 August 2020.
 
+### [Recording](https://www.youtube.com/watch?v=dmXaZ1sfwxg)
+
 ### [Event announcement](https://www.meetup.com/flutter-bangalore-group/events/272057891)
 
 ### [Tweet](https://twitter.com/FlutterBLR/status/1290205810073595904?s=20)
