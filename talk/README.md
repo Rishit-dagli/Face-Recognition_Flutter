@@ -25,3 +25,5 @@ My session at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/)
 ### [Slides](https://github.com/Rishit-dagli/Face-Recognition_Flutter/blob/master/talk/AI%20with%20Flutter%2C%20Flutter%20Mumbai%20Deck.pdf)
 
 ### [Recording](https://www.youtube.com/watch?v=xuiqxdtjp3Y)
+
+![](poster/flutter-mum.jpg)
