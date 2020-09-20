@@ -1,4 +1,4 @@
-# Face Recognition_Flutter
+# Face Recognition_Flutter [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FFace-Recognition_Flutter)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FFace-Recognition_Flutter)
 
 ![Flutter CI](https://github.com/Rishit-dagli/Face-Recognition_Flutter/workflows/Flutter%20CI/badge.svg)
 
