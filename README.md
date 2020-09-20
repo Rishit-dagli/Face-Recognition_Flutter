@@ -1,6 +1,8 @@
 # Face Recognition_Flutter [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FFace-Recognition_Flutter)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FFace-Recognition_Flutter)
 
 ![Flutter CI](https://github.com/Rishit-dagli/Face-Recognition_Flutter/workflows/Flutter%20CI/badge.svg)
+[![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)](https://twitter.com/intent/follow?screen_name=rishit_dagli)
+[![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)](https://github.com/Rishit-dagli)
 
 A project which shows you how you code use AI algorithms with Flutter, here I show the example of a Face recognition application with 
 Flutter and FireBase. I also gave a talk about this at [Flutter Mumbai Community](https://www.meetup.com/Mumbai-Flutter/) and 
